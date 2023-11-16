@@ -1,0 +1,135 @@
+﻿@* 
+// Html etiketlerinin durumunu ontrol ettikten sonra, uygulayacağımız css kodları için kullanılır *@
+
+<style>
+
+
+    a:link{
+    
+     color:black;
+    
+    }
+    a:visited{
+    
+    
+        color:red;
+    
+    }
+    a:hover{
+
+
+        color:yellow;
+    }
+    a:active{
+    
+    
+        color:deeppink;
+    
+    }
+    .mydiv{
+
+        width:300px;
+        height:300px;
+        border:2px solid red;
+
+
+    }
+
+   /*  //class verdiğimiz div'in üzerine gelindiğinde, arka planı blue olacaktır */
+    .mydiv:hover{
+    
+       
+        background-color:deepskyblue;
+    
+    
+    
+    }
+    span:hover{
+    
+        font-family:'Comic Sans MS';
+        text-shadow:5px 5px 5px deeppink;
+    }
+    
+    
+    p{
+    
+       display:none;
+       background-color:deeppink;
+       padding:20px;
+
+
+
+    }
+
+    .divp{
+    
+     width:500px;
+     height:500px;
+     border:2px solid black;
+    
+    
+    }
+  /*   //class'ı divp olan divîn üzerine gelindiğinde, p elementi görünür olacak */
+    .divp:hover p {
+    
+       display:block;
+
+    
+    }
+
+    .divp:hover .pclass{
+    
+       display:block;
+       color:white;
+    }
+    
+    /* p ler arasındaki ilk pyi seçer */
+    p:first-child{
+
+        color:black;
+
+    }
+    
+    /* // div'nin attributesinde yellow olan div'in üzerine gelindiğinde, attributesi, span ile başlayan görünür olsun
+
+     
+ */
+
+
+
+</style>
+
+<html>
+
+    <head>
+
+    </head>
+    <body>
+
+    <a href="http://www.google.com"> Google'a git</a>
+    <a href="http://www.hurriyet.com">Hürriyete git</a>
+    <div class="mydiv"></div>
+    <span>Mouse ile üzerine gel</span>
+
+
+
+    <div class="divp">
+
+        <p>
+            Div'in içerisindeki p
+        </p>
+        <p class="pclass">Div'in içerisindeki ikinci p </p>
+
+    </div>
+
+  
+
+
+    </body>
+
+
+    
+ 
+
+</html>
+
